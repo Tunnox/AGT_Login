@@ -9,7 +9,7 @@ connection = psycopg2.connect(dbname='AGT', user='postgres', password='pgsqtk116
 
 @app.route('/')
 def index():
-    return render_template('index_page.html')
+    return render_template('index.html')
 
 @app.route('/login', methods=['POST'])
 def login():
